@@ -9,7 +9,7 @@ export class DelivlibAppStack extends Stack {
     // The code that defines your stack goes here
 
     // example resource
-    const queue = new sqs.Queue(this, 'DelivlibAppQueue', {
+    const queue = new sqs.Queue(this, 'DelivlibAppQueueToo', {
       visibilityTimeout: Duration.seconds(300)
     });
   }
