@@ -7,7 +7,7 @@ export class DelivlibAppStack extends Stack {
     super(scope, id, props);
 
     // example resource
-    const queue = new sqs.Queue(this, 'DelivlibAppQueueToo', {
+    const myQueue = new sqs.Queue(this, 'DelivlibAppQueueToo', {
       visibilityTimeout: Duration.seconds(60)
     });
   }
